@@ -20,11 +20,4 @@ public class UserService {
                 .orElseThrow(() -> new UserNotFoundException(id));
         return UserResponse.mapperUserToUserResponse(u);
     }
-
-    /**
-     * method for initial db
-     */
-    private void initData(){
-
-    }
 }
